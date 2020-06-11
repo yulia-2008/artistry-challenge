@@ -1,0 +1,17 @@
+<h1>Artist Show</h1>
+
+<% if flash[:success] %>
+  <h1><%= flash[:success] %></h1>
+<% end %>
+
+<h1><%= @artist.name %></h1>
+<p><%= @artist.title %></p>
+<p><%= @artist.age %></p>
+
+<h1>My Instruments</h1>
+<% @artist.instruments.uniq.each do |instrument| %>
+  <p><%= instrument.name %></p>
+<% end %>
+
+
+<%= link_to "INDEX", artists_path %>
