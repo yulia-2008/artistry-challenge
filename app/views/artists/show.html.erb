@@ -1,0 +1,11 @@
+<h1>Artist Show Page</h1>
+
+<h5><%= @artist.name %></h5>
+<p><%= @artist.title %></p>
+<p><%= @artist.age %></p>
+
+<% @artist.instruments.uniq.each do |instrument| %>
+  <p><%= instrument.name %></p>
+<% end %>
+
+<%= button_to 'DELETE', super_destroy_path(@artist)%>

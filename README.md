@@ -1,4 +1,8 @@
 # Artistry
+ - collection_select
+ - Flash
+ - cutome routes
+
 Today, you have been tasked with building out a Rails application for a music studio!
 
 The purpose of this application is to log the artists in the database with the instruments that they play. This music studio only works with the best of the best, so every one of their artists can play multiple instruments. But keep in mind that with popular instruments (drums, guitar, bag pipes), there can be multiple artists playing them.
