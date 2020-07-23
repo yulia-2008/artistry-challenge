@@ -9,11 +9,7 @@ class InstrumentsController < ApplicationController
     
       
     
-      def create
-         @instrument = Instrument.create(instrument_params)
-         
-           redirect_to new_instrument_path
-         end
+      
        
     
        
